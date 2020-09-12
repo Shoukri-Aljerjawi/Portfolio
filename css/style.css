@@ -1,0 +1,99 @@
+@import url('../css/fonts.css');
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/*---------- Start Global Classes---------*/
+a {
+  text-decoration: none;
+  font-family: Capriola;
+  color: #3f4954;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul {
+  list-style-type: none;
+}
+/*---------- End Global Classes---------*/
+
+/*------Start navBar------*/
+.nav {
+  background: white;
+  padding: 16px;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 38px 0;
+  font-size: 18px;
+}
+
+.cllapse {
+  height: 30rem;
+}
+.nav .nav-meun {
+  justify-content: space-between;
+}
+
+.nav .nav-items {
+  display: flex;
+  margin: 0;
+}
+.nav .nav-items .nav-link {
+  padding: 26px 16px;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav .nav-items .nav-link:hover {
+  text-decoration: underline;
+}
+.nav .social {
+  padding: 23px 0;
+}
+
+.nav .social i {
+  padding: 0 5px;
+}
+
+.nav .social i:hover {
+  color: #33ff44;
+}
+
+.nav .nav-brand a {
+  font-size: 26px;
+  padding: 16px 0;
+  display: block;
+}
+/*------ End navBar------*/
+
+/* ---------- Start view width change --------*/
+@media only screen and (max-width: 700px) {
+  .nav .nav-meun,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+  .nav .toggle-collapse {
+    display: inline;
+  }
+}
+/* ---------- End view width change----------*/
