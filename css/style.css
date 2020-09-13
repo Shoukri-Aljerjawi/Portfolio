@@ -11,13 +11,19 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  margin: 20;
   width: 60%;
   z-index: 100;
+ margin-left: 59%;
+ flex-wrap: wrap;
 }
 nav li {
   margin-left: 1em;
   margin-bottom: 1em;
+  /* width: 120px; */
+  
+  
+  
 }
 nav {
   text-align: right;
@@ -31,11 +37,10 @@ nav {
   /* position: fixed; */
   width: 96.73%;
   z-index: 100;
-  font-family: Capriola;
+ 
 }
 .logo {
   padding-left: 1em;
-  text-align: left;
   font-size: 30px;
   letter-spacing: 3px;
   margin: 0;
@@ -46,16 +51,18 @@ nav {
 
 nav li a {
   color: #666;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: PoppinsM;
+  text-decoration: none;
+ 
+  flex-wrap: wrap;
+  
 }
 nav li a:hover {
   background-color: #111;
   color: #fff;
 }
-/*
-.active {
-  background-color: #4CAF50;
-} */
+
 .navbar-toggle {
   /* top: 3px; */
   padding-bottom: 1em;
@@ -68,7 +75,7 @@ nav li a:hover {
   z-index: 100;
 }
 
-/*=========================ADDING MEDIA QUERIES==================================*/
+/*---------------------MEDIA QUERIES----------------------*/
 @media screen and (max-width: 1024px) {
   nav li a {
     font-size: 14px;
@@ -88,7 +95,7 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 35%;
     top: 60px;
     background-color: #f3f3f3;
     transition: transform 0.5s ease-in;
@@ -112,6 +119,7 @@ nav li a:hover {
   text-align: center;
   color: #fff;
   font-size: 50px;
+  font-family: Poppinsbold;
 }
 
 .area {
@@ -228,41 +236,8 @@ nav li a:hover {
   }
 }
 /*---------------End banner--------------*/
-.test {
-  margin-top: 850px;
-}
 
 /*--------------Start About Me---------------*/
-/* .about-me {
-  text-align: center;
-  align-items: center;
-  flex-wrap: wrap;
-  
-}
-.about-me .about-text {
-  font-size: 25px;
-  text-decoration: underline;
-  position: relative;
-}
-.item {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  
-}
-.item li{
-  padding: 15px;
-  font-size: 20px;
-}
-.diamond‏{
-  width: 100px;
-  padding-bottom: 100px;
-  margin: 3.661%;
-  transform: rotate(45deg);
-  background: blue;
-  
-} */
 
 .about-me {
   background-color: #f7f7fb;
@@ -288,7 +263,7 @@ nav li a:hover {
   text-align: center;
 }
 
-.heading p{
+.heading p {
   font-size: 20px;
 }
 .sections {
@@ -308,6 +283,7 @@ nav li a:hover {
   margin: 5px;
   line-height: 30px;
   background: #eef0ee;
+  
 }
 .service-item:hover {
   box-shadow: 10px 10px 5px #ccc;
@@ -331,10 +307,9 @@ nav li a:hover {
   color: #3a3f4b;
   font-family: 'lorabold';
 }
- p {
+p {
   font-size: 18px;
   font-family: Poppinsl;
- 
 }
 .service-item i {
   background: #f5f6f8;
@@ -356,21 +331,151 @@ nav li a:hover {
   }
 }
 /*--------------End About Me---------------*/
-/*----------------Start Skills-----------------------*/
-.skills-list img {
-  border-radius: 20%;
-  width: 120px;
-  align-items: center;
-  margin: 30px;
+
+/*----------------Start call to action-----------------------*/
+.call-to-action {
+  background-color: rgba(248, 66, 121, 0.7);
+  z-index: -1;
+  text-align: center;
+  padding: 110px;
+  
 }
-.skills-list {
+.call-to-action .call-action-content {
+  color: #e7e7e7;
+  font-size: 40px;
+}
+.call-to-action ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 15px 0;
+}
+.call-to-action ul {
+  /* margin: 0; */
+  margin-left: -120px;
+  justify-content: center;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+.call-to-action a {
+  text-decoration: none;
+  color: #e7e7e7;
+  font-family: PoppinsM;
+  padding: 10px;
+  font-size: 18px;
+  display: inline-block;
+}
+.call-to-action ul .main-btn {
+  border: #e7e7e7 solid;
+  border-radius: 80px;
+  width: 250px;
+}
+
+.call-to-action ul .custom {
+  background: #e7e7e7;
+  color: rgba(248, 66, 121);
+}
+
+.call-to-action ul .main-btn:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background: rgba(255, 255, 255, 0.3);
+  color: #e7e7e7;
+}
+/*----------------End call to action-----------------------*/
+/*--------------Start About Me---------------*/
+
+.row {
+  text-align: center;
+  flex-direction: row;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+}
+.heading h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: Poppinsbold;
+  margin-bottom: 20px;
+  color: #3a3f4b;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.sections {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-item {
+  border: #eef0ee solid 0.01px;
+  border-radius: 4%;
+  width: 20%;
+  height: 300px;
+  font-size: 16px;
+  font-family: PoppinsM;
+  margin: 5px;
+  line-height: 30px;
+  background: #eef0ee;
+}
+.contact-item:hover {
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+
+.contact {
   width: auto;
   margin-left: 0;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   display: flex;
+  position: relative;
   flex-wrap: wrap;
 }
 
-/*----------------End Skills-----------------------*/
+.contact p {
+  font-size: 16px;
+  font-family: Poppinsl;
+}
+.contact-item i {
+  background: #f5f6f8;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  color: #00a5ff;
+  font-size: 36px;
+  line-height: 80px;
+  margin: 20px;
+}
+.contact a {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1046px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact-item {
+    width: 80%;
+  }
+}
+/*--------------End contact Me---------------*/
+/*--------------start footer---------------*/
+.footer {
+  width: 98.61vw;
+  height: 70px;
+  border: orangered solid;
+  background: orangered;
+}
+.footer p {
+  margin: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Poppinsbold;
+}
