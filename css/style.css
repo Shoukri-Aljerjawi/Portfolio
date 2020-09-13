@@ -5,110 +5,103 @@ body {
   margin: 0%;
   box-sizing: border-box;
 }
-/*---------- Start Global Classes---------*/
-a {
-  text-decoration: none;
-  font-family: Capriola;
-  color: #3f4954;
-}
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-ul {
+/*--------------------Nav Bar----------------------*/
+.nav-links {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  z-index: 100;
 }
-/*---------- End Global Classes---------*/
-
-/*------Start navBar------*/
-
-.nav {
-  background: white;
-  padding: 16px;
-  height: 0rem;
-  min-height: 10vh;
-  overflow: hidden;
-  transition: height 0.5s ease-in-out;
- 
+nav li {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+nav {
+  text-align: right;
+  padding-top: 1em;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 3em;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  /* position: fixed; */
+  width: 96.73%;
+  z-index: 100;
+  font-family: Capriola;
+}
+.logo {
+  padding-left: 1em;
+  text-align: left;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #f3f3f3;
 }
 
-.nav .toggle-collapse {
+nav li a {
+  color: #666;
+  font-size: 25px;
+}
+nav li a:hover {
+  background-color: #111;
+  color: #fff;
+}
+/*
+.active {
+  background-color: #4CAF50;
+} */
+.navbar-toggle {
+  /* top: 3px; */
+  padding-bottom: 1em;
+  padding-top: 0.7em;
   position: absolute;
-  top: 0%;
-  width: 90%;
+  font-size: 30px;
+  right: 40px;
   cursor: pointer;
   display: none;
+  z-index: 100;
 }
 
-.nav .toggle-collapse .toggle-icon {
-  display: flex;
-  justify-content: flex-end;
-  padding: 38px 0;
-  font-size: 18px;
+/*=========================ADDING MEDIA QUERIES==================================*/
+@media screen and (max-width: 1024px) {
+  nav li a {
+    font-size: 14px;
+  }
 }
+@media screen and (max-width: 789px) {
+  .nav-links {
+    display: none;
+  }
 
-.cllapse {
-  height: 30rem;
-}
-.nav .nav-meun {
-  justify-content: space-between;
-}
-
-.nav .nav-items {
-  display: flex;
-  margin: 0;
-}
-.nav .nav-items .nav-link {
-  padding: 26px 16px;
-  font-size: 18px;
-  position: relative;
-}
-
-.nav .nav-items .nav-link:hover {
-  text-decoration: underline;
-}
-.nav .social {
-  padding: 23px 0;
-}
-
-.nav .social i {
-  padding: 0 5px;
-}
-
-.nav .social i:hover {
-  color: #33ff44;
-}
-
-.nav .nav-brand a {
-  font-size: 26px;
-  padding: 16px 0;
-  display: block;
-}
-/*------ End navBar------*/
-
-/* ---------- Start view width change --------*/
-@media only screen and (max-width: 700px) {
-  .nav .nav-meun,
-  .nav .nav-items {
+  .navbar-toggle {
+    display: block;
+  }
+  .mob-nav-active {
+    position: absolute;
+    right: 0.5em;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
+    top: 60px;
+    background-color: #f3f3f3;
+    transition: transform 0.5s ease-in;
+    z-index: 1000;
+    position: absolute;
   }
-  .nav .toggle-collapse {
-    display: inline;
+  nav li a {
+    font-size: 20px;
   }
 }
-/* ---------- End view width change----------*/
-
-/*-------------Start fixed navbar-----------*/
-.fixed {
-  position: fixed;
-  width: 97vw;
-  top: 0;
-  z-index: 22;
-}
-/*-------------End fixed navbar-----------*/
 
 /*---------------Start banner--------------*/
+
 .context {
   width: 100%;
   position: absolute;
@@ -139,7 +132,6 @@ ul {
 .circles li {
   position: absolute;
   display: block;
-  list-style: none;
   width: 20px;
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
@@ -239,3 +231,146 @@ ul {
 .test {
   margin-top: 850px;
 }
+
+/*--------------Start About Me---------------*/
+/* .about-me {
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.about-me .about-text {
+  font-size: 25px;
+  text-decoration: underline;
+  position: relative;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  
+}
+.item li{
+  padding: 15px;
+  font-size: 20px;
+}
+.diamond‏{
+  width: 100px;
+  padding-bottom: 100px;
+  margin: 3.661%;
+  transform: rotate(45deg);
+  background: blue;
+  
+} */
+
+.about-me {
+  background-color: #f7f7fb;
+  flex-wrap: wrap;
+  position: relative;
+}
+.row {
+  text-align: center;
+  flex-direction: row;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+}
+.heading h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: Poppinsbold;
+  margin-bottom: 20px;
+  color: #3a3f4b;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.heading p{
+  font-size: 20px;
+}
+.sections {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-item {
+  border: #eef0ee solid 0.01px;
+  border-radius: 4%;
+  width: 20%;
+  height: 300px;
+  font-size: 17px;
+  font-family: PoppinsM;
+  margin: 5px;
+  line-height: 30px;
+  background: #eef0ee;
+}
+.service-item:hover {
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+
+.service {
+  width: auto;
+  margin-left: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+.service-item h5 {
+  text-transform: uppercase;
+  color: #3a3f4b;
+  font-family: 'lorabold';
+}
+ p {
+  font-size: 18px;
+  font-family: Poppinsl;
+ 
+}
+.service-item i {
+  background: #f5f6f8;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  color: #00a5ff;
+  font-size: 36px;
+  line-height: 80px;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 1046px) {
+  .service {
+    flex-direction: column;
+  }
+  .service-item {
+    width: 80%;
+  }
+}
+/*--------------End About Me---------------*/
+/*----------------Start Skills-----------------------*/
+.skills-list img {
+  border-radius: 20%;
+  width: 120px;
+  align-items: center;
+  margin: 30px;
+}
+.skills-list {
+  width: auto;
+  margin-left: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*----------------End Skills-----------------------*/

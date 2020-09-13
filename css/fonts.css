@@ -2,3 +2,17 @@
     font-family: Capriola;
     src:url("../fonts/Capriola-Regular.ttf")
 }
+
+@font-face{
+    font-family: PoppinsM;
+    src:url("../fonts/Poppins-Medium.ttf")
+}
+@font-face{
+    font-family: Poppinsl;
+    src:url("../fonts/Poppins-ExtraLight.ttf")
+}
+@font-face{
+    font-family: Poppinsbold;
+    src:url("../fonts/Poppins-SemiBold.ttf")
+}
+

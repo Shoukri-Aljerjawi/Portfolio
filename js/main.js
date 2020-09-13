@@ -1,15 +1,17 @@
 $(document).ready(() => {
   // click on toggle meun
-  $('.toggle-icon').click(() => {
-    $('.nav').toggleClass('cllapse');
-  });
-  //fixed navBar when scroll down
-  var hight = $('.banner').height();
-  $(window).scroll(() => {
-    if ($(this).scrollTop() > hight) {
-      $('.nav').addClass('fixed');
-    } else {
-      $('.nav').removeClass('fixed');
-    }
+  const navSlider = () => {
+    const mainNav = document.querySelector('.nav-links');
+    const navBarToggle = document.querySelector('.navbar-toggle');
+
+    navBarToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('mob-nav-active');
+    });
+  };
+  navSlider();
+
+  $('.nav-links a').on('click', function () {
+    console.log("SDFSDF")
+    $('.nav-links').removeClass('mob-nav-active');
   });
 });
