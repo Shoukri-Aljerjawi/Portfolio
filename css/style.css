@@ -11,19 +11,13 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  margin: 20;
-  width: 60%;
   z-index: 100;
- margin-left: 59%;
- flex-wrap: wrap;
+  margin-left: 56%;
+  /* flex-wrap: wrap; */
 }
 nav li {
   margin-left: 1em;
   margin-bottom: 1em;
-  /* width: 120px; */
-  
-  
-  
 }
 nav {
   text-align: right;
@@ -32,21 +26,20 @@ nav {
   display: flex;
   justify-content: space-around;
   padding-right: 3em;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
-  /* position: fixed; */
-  width: 96.73%;
+  /* border: 1px solid #e7e7e7; */
+  /* background-color: #f3f3f3; */
+  width: 100%;
   z-index: 100;
- 
+  position: fixed;
 }
 .logo {
   padding-left: 1em;
   font-size: 30px;
-  letter-spacing: 3px;
+  font-family: 'Poppinsbold';
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
 }
 
 nav li a {
@@ -54,17 +47,13 @@ nav li a {
   font-size: 20px;
   font-family: PoppinsM;
   text-decoration: none;
- 
-  flex-wrap: wrap;
-  
 }
 nav li a:hover {
-  background-color: #111;
+  background-color: #00d3be;
   color: #fff;
 }
 
 .navbar-toggle {
-  /* top: 3px; */
   padding-bottom: 1em;
   padding-top: 0.7em;
   position: absolute;
@@ -76,7 +65,7 @@ nav li a:hover {
 }
 
 /*---------------------MEDIA QUERIES----------------------*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1444px) {
   nav li a {
     font-size: 14px;
   }
@@ -95,8 +84,9 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 35%;
-    top: 60px;
+    height: 100%;
+    width: 38%;
+    top: 63px;
     background-color: #f3f3f3;
     transition: transform 0.5s ease-in;
     z-index: 1000;
@@ -110,20 +100,22 @@ nav li a:hover {
 /*---------------Start banner--------------*/
 
 .context {
+  text-align: center;
   width: 100%;
   position: absolute;
   top: 30vh;
+  margin-top: 2%;
 }
 
 .context h1 {
-  text-align: center;
+  /* text-align: center; */
   color: #fff;
   font-size: 50px;
   font-family: Poppinsbold;
 }
 
 .area {
-  background: #cf366c;
+  background: #009688;
   width: 100%;
   height: 100vh;
 }
@@ -240,7 +232,6 @@ nav li a:hover {
 /*--------------Start About Me---------------*/
 
 .about-me {
-  background-color: #f7f7fb;
   flex-wrap: wrap;
   position: relative;
 }
@@ -274,7 +265,7 @@ nav li a:hover {
 }
 
 .service-item {
-  border: #eef0ee solid 0.01px;
+  border: #e0d1d1 solid 0.01px;
   border-radius: 4%;
   width: 20%;
   height: 300px;
@@ -282,8 +273,7 @@ nav li a:hover {
   font-family: PoppinsM;
   margin: 5px;
   line-height: 30px;
-  background: #eef0ee;
-  
+  background: #e1dee3;
 }
 .service-item:hover {
   box-shadow: 10px 10px 5px #ccc;
@@ -334,11 +324,10 @@ p {
 
 /*----------------Start call to action-----------------------*/
 .call-to-action {
-  background-color: rgba(248, 66, 121, 0.7);
+  background-color: rgba(0, 150, 136, 0.7);
   z-index: -1;
   text-align: center;
   padding: 110px;
-  
 }
 .call-to-action .call-action-content {
   color: #e7e7e7;
@@ -372,7 +361,7 @@ p {
 
 .call-to-action ul .custom {
   background: #e7e7e7;
-  color: rgba(248, 66, 121);
+  color: rgba(0, 150, 136);
 }
 
 .call-to-action ul .main-btn:hover {
@@ -381,8 +370,61 @@ p {
   color: #e7e7e7;
 }
 /*----------------End call to action-----------------------*/
-/*--------------Start About Me---------------*/
+/*--------------Start myservice---------------*/
+.myservice .headingw {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
+}
+.myservice h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: Poppinsbold;
+  margin-bottom: 20px;
+  color: #3a3f4b;
+  letter-spacing: 1px;
+}
+.myservices .services-item {
+  border: #9B9D9B solid 0.5px;
+  border-radius: 4%;
+  width: 30%;
+  height: 300px;
+  font-size: 17px;
+  font-family: PoppinsM;
+  margin: 20px;
+  line-height: 30px;
+}
+.myservices .services-item:hover {
+  margin-top: -1%;
+  background: #eef0ee;
+  border: solid #eef0ee;
+}
+
+.myservices .services-item p {
+  padding: 2%;
+}
+.myservices {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/*--------------End myservice---------------*/
+
+/*--------------Start contact Me---------------*/
+.contactme {
+  background: #eef0ee;
+}
 .row {
   text-align: center;
   flex-direction: row;
@@ -418,7 +460,7 @@ p {
   font-family: PoppinsM;
   margin: 5px;
   line-height: 30px;
-  background: #eef0ee;
+  background: #e0e2e0;
 }
 .contact-item:hover {
   box-shadow: 10px 10px 5px #ccc;
@@ -470,8 +512,8 @@ p {
 .footer {
   width: 98.61vw;
   height: 70px;
-  border: orangered solid;
-  background: orangered;
+  border: #00d3be solid;
+  background: #00d3be;
 }
 .footer p {
   margin: 15px;

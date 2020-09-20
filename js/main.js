@@ -11,7 +11,6 @@ $(document).ready(() => {
   navSlider();
 
   $('.nav-links a').on('click', function () {
-    console.log("SDFSDF")
     $('.nav-links').removeClass('mob-nav-active');
   });
 });
